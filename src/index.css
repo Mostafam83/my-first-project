@@ -25,7 +25,16 @@
 input::placeholder{
   text-align: right;
 }
+/* مخفی کردن نوار اسکرول برای مرورگرهای WebKit (Chrome, Safari, Edge جدید) */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
 
+/* مخفی کردن نوار اسکرول برای فایرفاکس */
+.no-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
 
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;

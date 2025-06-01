@@ -17,7 +17,7 @@ export default function Header() {
     };
 
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col z-40">
             
             <div className="w-full h-12 bg-black hidden lg:flex justify-between items-center px-4 sm:px-6 lg:px-8 relative z-20">
                 
@@ -65,16 +65,16 @@ export default function Header() {
                             </div>
                             <div className="hidden lg:flex items-center ml-3 sm:ml-4">
                                 <ul className="flex h-full items-center">
-                                    <li className="px-1 sm:px-2 xl:px-3 hover:underline h-full flex items-center">
+                                    <li className="px-1 sm:px-2 xl:px-3 underline-hover h-full flex items-center">
                                         <a href="#" className="text-sm sm:text-base">محصولات</a>
                                     </li>
-                                    <li className="px-1 sm:px-2 xl:px-3 hover:underline h-full flex items-center">
+                                    <li className="px-1 sm:px-2 xl:px-3 underline-hover h-full flex items-center">
                                         <a href="#" className="text-sm sm:text-base">خدمات</a>
                                     </li>
-                                    <li className="px-1 sm:px-2 xl:px-3 hover:underline h-full flex items-center">
+                                    <li className="px-1 sm:px-2 xl:px-3 underline-hover h-full flex items-center">
                                         <a href="#" className="text-sm sm:text-base">پشتیبانی</a>
                                     </li>
-                                    <li className="px-1 sm:px-2 xl:px-3 hover:underline h-full flex items-center">
+                                    <li className="px-1 sm:px-2 xl:px-3 underline-hover h-full flex items-center">
                                         <a href="#" className="text-sm sm:text-base">فیبر‌نوری</a>
                                     </li>
                                 </ul>
