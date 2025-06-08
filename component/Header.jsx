@@ -17,7 +17,7 @@ export default function Header() {
     };
 
     return (
-        <div className="flex flex-col z-40">
+        <div className="flex flex-col  shadow-2xl">
             
             <div className="w-full h-12 bg-black hidden lg:flex justify-between items-center px-4 sm:px-6 lg:px-8 relative z-20">
                 

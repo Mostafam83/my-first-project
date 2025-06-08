@@ -1,7 +1,7 @@
 export default function Servise() {
   return (
     
-    <div className="w-full h-48 rounded-t-2xl flex items-center overflow-x-auto cursor-grab space-x-4 px-4 no-scrollbar justify-around">
+    <div className="w-full h-48 rounded-t-4xl flex items-center overflow-x-auto cursor-grab space-x-4 px-4 no-scrollbar justify-around">
       
       <a
         href="https://irancell.ir/p/764/myirancell"

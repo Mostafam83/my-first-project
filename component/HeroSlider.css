@@ -1,5 +1,3 @@
-
-
 :root {
   --autoplay-delay-ms: 5000ms;
 }
@@ -13,74 +11,133 @@
   position: absolute;
   z-index: 10;
   display: flex;
+  gap: 10px;
+  transition: all 0.3s ease;
 }
 
-.swiper-vertical > .custom-swiper-pagination {
-  right: 20px; top: 50%; transform: translateY(-50%); flex-direction: column;
+
+@media (min-width: 1024px) {
+  .custom-swiper-pagination {
+    flex-direction: column;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
-.swiper-vertical .custom-swiper-bullet {
-  width: 10px; height: 35px; background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 5px; margin: 6px 0; cursor: pointer;
-  position: relative; overflow: hidden; transition: background-color 0.3s ease;
+
+@media (max-width: 1023px) {
+  .custom-swiper-pagination {
+    flex-direction: row;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
-.swiper-vertical .custom-swiper-bullet-active {
-  background-color: rgba(255, 255, 255, 0.6);
+
+
+.custom-swiper-bullet {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border-radius: 9999px;
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+  box-sizing: border-box;
 }
-.swiper-vertical .custom-swiper-bullet .custom-bullet-progress-bar {
-  position: absolute; bottom: 0; left: 0; width: 100%; height: 100%;
-  background-color: #facc15; 
+
+
+@media (min-width: 1024px) {
+  .custom-swiper-bullet-active {
+    width: 16px;
+    height: 72px; 
+    border-radius: 12px;
+    background-color: #facc15; 
+    transition: all 0.3s ease;
+    z-index: 2;
+  }
+
+
+  .custom-bullet-progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #facc15;
+    transform-origin: bottom;
+    animation-name: deplete_progress_vertical;
+    animation-duration: var(--autoplay-delay-ms);
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes deplete_progress_vertical {
+    from { transform: scaleY(1); }
+    to { transform: scaleY(0); }
+  }
+}
+
+@media (max-width: 1023px) {
+  .custom-swiper-bullet-active {
+    width: 32px;
+    height: 12px;
+    border-radius: 12px;
+    background-color: #facc15;
+    transition: all 0.3s ease;
+    z-index: 2;
+  }
+
+  .custom-bullet-progress-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #facc15;
+    transform-origin: left;
+    animation-name: deplete_progress_horizontal;
+    animation-duration: var(--autoplay-delay-ms);
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes deplete_progress_horizontal {
+    from { transform: scaleX(1); }
+    to { transform: scaleX(0); }
+  }
+}
+
+.custom-bullet-progress-bar {
+  position: absolute;
+  background-color: #facc15;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
   transform-origin: bottom;
-  
-}
-.swiper-vertical .custom-swiper-bullet-active .custom-bullet-progress-bar {
-  animation-name: deplete_progress_vertical;
-  animation-duration: var(--autoplay-delay-ms);
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-}
-@keyframes deplete_progress_vertical {
-  from { transform: scaleY(1); } 
-  to { transform: scaleY(0); }
-}
-
-.swiper-horizontal > .custom-swiper-pagination {
-  bottom: 20px; left: auto; right: 20px; transform: translateX(0);
-  flex-direction: row; top:auto;
-}
-.swiper-horizontal .custom-swiper-bullet {
-  width: 25px; height: 6px; background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 3px; margin: 0 4px; cursor: pointer;
-  position: relative; overflow: hidden; transition: background-color 0.3s ease;
-}
-.swiper-horizontal .custom-swiper-bullet-active {
-  background-color: rgba(255, 255, 255, 0.8);
-}
-.swiper-horizontal .custom-swiper-bullet .custom-bullet-progress-bar {
-  position: absolute; left: 0; top: 0; width: 100%; height: 100%;
-  background-color: #fde047; 
-  transform-origin: left;
-}
-.swiper-horizontal .custom-swiper-bullet-active .custom-bullet-progress-bar {
-  animation-name: deplete_progress_horizontal;
-  animation-duration: var(--autoplay-delay-ms);
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-}
-@keyframes deplete_progress_horizontal {
-  from { transform: scaleX(1); } 
-  to { transform: scaleX(0); }  
 }
 
 
 .slide-text-content {
-  opacity: 0; transform: translateY(20px) scale(0.95);
+  opacity: 0;
+  transform: translateY(20px) scale(0.95);
   transition: opacity 0.5s ease-out, transform 0.5s ease-out;
   transition-delay: 0.3s;
 }
+
 .swiper-slide-active .slide-text-content {
-  opacity: 1; transform: translateY(0) scale(1);
+  opacity: 1;
+  transform: translateY(0) scale(1);
 }
-.image-align-left { object-position: left center !important; }
+
+.image-align-left {
+  object-position: left center !important;
+}
+
 @media (max-width: 1023.98px) {
-  .image-align-left { object-position: center center !important; }
+  .image-align-left {
+    object-position: center center !important;
+  }
 }

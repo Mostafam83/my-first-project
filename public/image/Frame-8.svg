@@ -1,0 +1,35 @@
+<svg width="82" height="69" viewBox="0 0 82 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1223_4076)">
+<g clip-path="url(#clip1_1223_4076)">
+<path opacity="0.2" d="M78.7864 59.1701H62.3507C55.5545 59.1701 49.8506 54.043 49.1224 47.2962L51.9571 52.6399H78.795V59.1788L78.7864 59.1701Z" fill="#FECA30"/>
+<path d="M23.5241 45.2437C35.0525 45.2437 44.398 35.9065 44.398 24.3886C44.398 12.8707 35.0525 3.5336 23.5241 3.5336C11.9957 3.5336 2.6501 12.8707 2.6501 24.3886C2.6501 35.9065 11.9957 45.2437 23.5241 45.2437Z" stroke="#FECA30" stroke-width="1.5" stroke-miterlimit="10"/>
+<path d="M20.1433 22.1888L22.4232 25.6444C22.6052 25.8783 22.9346 25.9216 23.1687 25.7484L31.7159 19.7551" stroke="#FECA30" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+<g opacity="0.2">
+<path d="M23.5241 42.5935V39.6055" stroke="#FECA30" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M14.5174 40.1858L16.0171 37.5962" stroke="#FECA30" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M7.92061 33.595L10.5125 32.0967" stroke="#FECA30" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M5.51074 24.5965H8.5014" stroke="#FECA30" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M7.92061 15.5893L10.5125 17.0876" stroke="#FECA30" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M14.5174 8.99852L16.0171 11.5881" stroke="#FECA30" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M23.5241 6.59084V9.57879" stroke="#FECA30" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M32.5394 8.99852L31.0397 11.5967" stroke="#FECA30" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M39.1362 15.5893L36.5356 17.0876" stroke="#FECA30" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M41.5461 24.5878H38.5554" stroke="#FECA30" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M39.1362 33.595L36.5356 32.0967" stroke="#FECA30" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M32.5394 40.1858L31.0397 37.5876" stroke="#FECA30" stroke-miterlimit="10" stroke-linecap="round"/>
+</g>
+<path d="M48.3076 20.6818H73.5679C76.3938 20.6818 78.6823 22.9683 78.6823 25.7917V62.5651C78.6823 65.3885 76.3938 67.6836 73.5679 67.6836H18.3576C15.5316 67.6836 13.2431 65.3885 13.2431 62.5651V48.093" stroke="white" stroke-width="3.04" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M43.5485 8.08914L56.7768 1.57628C58.4325 0.762168 60.3656 1.96601 60.3656 3.80208V20.6818H48.3076" stroke="white" stroke-width="3.04" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M56.4474 40.1598H78.6737V52.9084H56.4474C53.1013 52.9084 50.388 50.1976 50.388 46.8545V46.205C50.388 42.862 53.1013 40.1511 56.4474 40.1511V40.1598Z" stroke="white" stroke-width="3.04" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M56.9588 49.2103C58.4382 49.2103 59.6374 48.0121 59.6374 46.5341C59.6374 45.0561 58.4382 43.8579 56.9588 43.8579C55.4795 43.8579 54.2802 45.0561 54.2802 46.5341C54.2802 48.0121 55.4795 49.2103 56.9588 49.2103Z" fill="white"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_1223_4076">
+<rect width="81" height="68.6667" fill="white" transform="translate(0.333334 0.333336)"/>
+</clipPath>
+<clipPath id="clip1_1223_4076">
+<rect width="78" height="69" fill="white" transform="translate(1.99996 2.28882e-05)"/>
+</clipPath>
+</defs>
+</svg>
