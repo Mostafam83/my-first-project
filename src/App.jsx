@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import './App.css'
-import Header from "/component/Header.jsx"
-import Hero from "/component/hero.jsx"
-import Servise from "/component/servise.jsx"
-import Sugest from "/component/sugest.jsx"
+import Header from "/components/Header.jsx"
+import Hero from "/components/hero.jsx"
+import Servise from "/components/servise.jsx"
+import Sugest from "/components/sugest.jsx"
+import PackagesSection from "/components/PackagesSection.jsx"
+import Footer from "/components/Footer.jsx"
 function App() {
   const [count, setCount] = useState(0)
 
@@ -22,6 +24,12 @@ function App() {
       <div>
         <Sugest/>
       </div>
+      <div>
+        <PackagesSection/>  
+      </div>
+      <footer>
+        <Footer/>
+      </footer>
     </div>
     </>
   )
