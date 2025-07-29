@@ -19,11 +19,10 @@ const Footer = () => {
     ];
 
     return (
-        <footer className="bg-[#1f2937] text-slate-300 pt-16" dir="rtl">
+        <footer className="bg-black text-slate-300 pt-16" dir="rtl">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
 
-                    {/* Link Columns */}
                     {linkColumns.map(col => (
                         <div key={col.title}>
                             <h3 className="font-extrabold text-white text-lg mb-4">{col.title}</h3>
@@ -37,7 +36,6 @@ const Footer = () => {
                         </div>
                     ))}
 
-                    {/* Social and App Section */}
                     <div>
                         <h3 className="font-extrabold text-white text-lg mb-4">ما را دنبال کنید</h3>
                         <div className="flex items-center gap-x-4 mb-6 text-xl">
@@ -50,7 +48,7 @@ const Footer = () => {
                         <h3 className="font-extrabold text-white text-lg mb-4 mt-8">دانلود اپلیکیشن</h3>
                         <div className="flex flex-col sm:flex-row lg:flex-col gap-3">
 
-                            {/* Google Play */}
+               
                             <a
                                 href="#"
                                 className="bg-gray-700 hover:bg-gray-600 rounded-xl px-4 py-3 flex items-center gap-3 transition-colors"
@@ -62,7 +60,7 @@ const Footer = () => {
                                 </div>
                             </a>
 
-                            {/* App Store */}
+                            
                             <a
                                 href="#"
                                 className="bg-gray-700 hover:bg-gray-600 rounded-xl px-4 py-3 flex items-center gap-3 transition-colors"
@@ -78,7 +76,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                {/* Bottom Bar */}
+       
                 <div className="mt-12 py-6 border-t border-gray-700 text-center text-sm text-slate-400">
                     <p>&copy; {new Date().getFullYear()} کلیه حقوق این وب‌سایت متعلق به ایرانسل است.</p>
                 </div>
